@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário sobre preferências automotivas e o Grupo Volkswagen.">
+
+    <title>Formulário | Grupo Volkswagen</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Formulário</h1>
+
+        <p>
+            Compartilhe suas preferências e opiniões sobre o universo automotivo.
+        </p>
+
+    </header>
+
+    <nav>
+
+        <h2>Menu</h2>
+
+        <h3>Início e História</h3>
+
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="evolucao.html">Evolução</a></li>
+        </ul>
+
+        <h3>Marcas</h3>
+
+        <ul>
+            <li><a href="volkswagen.html">Volkswagen</a></li>
+            <li><a href="audi-marca.html">Audi</a></li>
+            <li><a href="porsche.html">Porsche</a></li>
+            <li><a href="lamborghini.html">Lamborghini</a></li>
+        </ul>
+
+        <h3>Automóveis e Tecnologia</h3>
+
+        <ul>
+            <li><a href="segmentos.html">Segmentos</a></li>
+            <li><a href="motores.html">Motores</a></li>
+            <li><a href="tecnologia.html">Tecnologia</a></li>
+        </ul>
+
+        <h3>Conteúdo</h3>
+
+        <ul>
+            <li><a href="multimidia.html">Multimídia</a></li>
+            <li><a href="formulario.html">Formulário</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <section>
+
+            <h2>Pesquisa sobre automóveis</h2>
+
+            <article>
+
+                <form>
+
+                    <p>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome"
+                            placeholder="Digite seu nome" required>
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email"
+                            placeholder="Digite seu e-mail" required>
+                    </p>
+
+                    <p>
+                        <label for="data">Data de nascimento:</label>
+                        <input type="date" id="data" name="data" required>
+                    </p>
+
+                    <p>
+                        <label for="marca">Marca favorita:</label>
+
+                        <input list="marcas" id="marca" name="marca"
+                            placeholder="Escolha ou digite uma marca" required>
+
+                        <datalist id="marcas">
+                            <option value="Volkswagen">
+                            <option value="Audi">
+                            <option value="Porsche">
+                            <option value="Lamborghini">
+                        </datalist>
+
+                    </p>
+
+                    <p>
+
+                        <label for="segmento">Segmento favorito:</label>
+
+                        <select id="segmento" name="segmento" required>
+
+                            <option value="">Selecione uma opção</option>
+                            <option value="compacto">Compacto</option>
+                            <option value="hatch">Hatch</option>
+                            <option value="seda">Sedã</option>
+                            <option value="suv">SUV</option>
+                            <option value="esportivo">Esportivo</option>
+                            <option value="superesportivo">Superesportivo</option>
+
+                        </select>
+
+                    </p>
+
+                    <p>
+
+                        <label for="cor">Escolha uma cor para o seu carro:</label>
+
+                        <input type="color" id="cor" name="cor">
+
+                    </p>
+
+                    <p>
+
+                        <label for="foto">Envie uma foto de um carro:</label>
+
+                        <input type="file" id="foto" name="foto">
+
+                    </p>
+
+                    <p>
+
+                        <label for="comentario">Conte qual é o seu carro favorito:</label>
+
+                        <br>
+
+                        <textarea id="comentario" name="comentario"
+                            placeholder="Digite aqui sua resposta"
+                            rows="5" cols="40" required></textarea>
+
+                    </p>
+
+                    <p>
+
+                        <label>Você acompanha novidades sobre carros?</label>
+
+                        <br>
+
+                        <input type="radio" id="sim" name="novidades" value="sim" required>
+                        <label for="sim">Sim</label>
+
+                        <input type="radio" id="nao" name="novidades" value="nao">
+                        <label for="nao">Não</label>
+
+                    </p>
+
+                    <p>
+
+                        <label>Quais assuntos você gosta?</label>
+
+                        <br>
+
+                        <input type="checkbox" id="motores" name="assuntos" value="motores">
+                        <label for="motores">Motores</label>
+
+                        <br>
+
+                        <input type="checkbox" id="tecnologia" name="assuntos" value="tecnologia">
+                        <label for="tecnologia">Tecnologia</label>
+
+                        <br>
+
+                        <input type="checkbox" id="esportivos" name="assuntos" value="esportivos">
+                        <label for="esportivos">Carros esportivos</label>
+
+                    </p>
+
+                    <p>
+
+                        <input type="submit" value="Enviar formulário">
+
+                        <input type="reset" value="Limpar">
+
+                    </p>
+
+                </form>
+
+            </article>
+
+        </section>
+
+        <aside>
+
+            <h2>Sobre o formulário</h2>
+
+            <p>
+                Este formulário faz parte do projeto acadêmico e tem como
+                objetivo demonstrar diferentes elementos disponíveis no HTML.
+            </p>
+
+        </aside>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Projeto acadêmico — site grupo VW
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
